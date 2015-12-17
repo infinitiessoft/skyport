@@ -1,0 +1,40 @@
+### Eclipse ###
+.classpath
+.project
+.settings/
+.metadata/
+.settings_backup/*
+.checkstyle
+*.publishsettings
+.metadata
+
+### SVN ###
+.svn/
+
+### Maven ###
+target/
+
+### Skyport ###
+/skyport-core/tomcat.context/work/
+/skyport-core/tomcat.context/logs/
+/skyport-core/log/
+/driver-scvmm2012/log/
+/driver-vmware/log/
+/skyport-core/db/
+/skyport-core/META-INF/persistence.xml
+/nova2.0-api/db/
+### Manifest ###
+##META-INF
+
+### JKS ###
+*.jks
+*.p12
+*.pem
+
+### LOG ###
+*.log
+*.log.*
+
+### accessconfig ###
+skyport-core/accessconfig.xml
+skyportWebApi.cache

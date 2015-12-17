@@ -1,0 +1,47 @@
+[submodule "skyport-dependencies"]
+        path = skyport-dependencies
+        url = https://github.com/infinitiessoft/skyport-dependencies.git
+[submodule "skyport-driver"]
+	path = skyport-driver
+	url = https://github.com/infinitiessoft/skyport-driver.git
+[submodule "skyport-entity"]
+        path = skyport-entity
+        url = https://github.com/infinitiessoft/skyport-entity.git
+[submodule "skyport-jpa"]
+        path = skyport-jpa
+        url = https://github.com/infinitiessoft/skyport-jpa.git
+[submodule "skyport-api"]
+        path = skyport-api
+        url = https://github.com/infinitiessoft/skyport-api.git
+[submodule "skyport-distributed"]
+        path = skyport-distributed
+        url = https://github.com/infinitiessoft/skyport-distributed.git
+[submodule "skyport-hazelcast"]
+        path = skyport-hazelcast
+        url = https://github.com/infinitiessoft/skyport-hazelcast.git
+[submodule "skyport-swing"]
+        path = skyport-swing
+        url = https://github.com/infinitiessoft/skyport-swing.git
+[submodule "skyport-websockify"]
+        path = skyport-websockify
+        url = https://github.com/infinitiessoft/skyport-websockify.git
+[submodule "skyport-core"]
+        path = skyport-core
+        url = https://github.com/infinitiessoft/skyport-core.git
+[submodule "nova2.0-api"]
+        path = nova2.0-api
+        url = https://github.com/infinitiessoft/nova2.0-api.git
+[submodule "cloud-mock"]
+        path = cloud-mock
+        url = https://github.com/infinitiessoft/cloud-mock.git
+[submodule "cloud-openstack"]
+        path = cloud-openstack
+        url = https://github.com/infinitiessoft/cloud-openstack.git
+
+
+
+
+
+
+
+
