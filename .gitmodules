@@ -38,5 +38,5 @@
 	path = cloud-openstack
 	url = https://github.com/infinitiessoft/cloud-openstack.git
 [submodule "skyport-jsw"]
-        path = skyport-jsw
-        url = https://github.com/infinitiessoft/skyport-jsw.git
+	path = skyport-jsw
+	url = https://github.com/infinitiessoft/skyport-jsw.git
