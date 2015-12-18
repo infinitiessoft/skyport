@@ -25,7 +25,7 @@ Skyport is an open source Java application that enables user to use [Openstack N
 
 ## Overview
 
-For some reason, many of us use multiple virtualization platform concurrently. But the more platforms you use, the more work it takes to keep up with them. Skyport is an application that provides a single API interface compatibility with OpenStack Copmute(Nova) 2.0 API to work with multiple cloud computing providers.
+For some reason, many of us use multiple virtualization platform concurrently. But the more platforms you use, the more work it takes to keep up with them. Skyport is an application that provides a single API compatibility with OpenStack Copmute(Nova) 2.0 API to work with multiple cloud computing providers.
 
 ## Configuration
 
