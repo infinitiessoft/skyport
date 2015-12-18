@@ -42,6 +42,11 @@ Check them here: [Release notes](https://github.com/infinitiessoft/skyport/blob/
 
 ## Acknowledgements
 
+The Skyport infrastructure relies upon these free and openly available projects:
+- [OpenStack compute(Nova)](https://github.com/openstack/nova)
+- [Dasein clouds](https://github.com/dasein-cloud/dasein-cloud/)
+- [Java Websockify](https://github.com/jribble/Java-Websockify)
+
 ## License
 
 *Skyport* is available under the Apache License, Version 2.0.
