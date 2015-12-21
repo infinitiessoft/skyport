@@ -7,6 +7,7 @@ Skyport is an open source Java application that enables user to use [Openstack N
 - [Quick start](#quick-start)
 - [Overview](#overview)
 - [Configuration](#configuration)
+    - [Profile](#profile)
     - [Security](#security)
         - [Disabling Authentication](#disabling-authentication)
         - [Integrate with `Openstack Keystone`](#integration-with-openstack-keystone)
@@ -37,7 +38,7 @@ For some reason, many of us use multiple virtualization platform concurrently. B
 
 ## Configuration
 
-### Profile Configuration
+### Profile
 
 To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
 
@@ -54,7 +55,7 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
     * `AccessPublic`:Enter the public part of your API keys or username **(Required)**.
     * `AccessPrivate`:Enter the private part of your API keys or password **(Required)**.
 
-  3. To enable cache to reduce the response time of the List Objects API, select the **Cache** check box to enable caching. 
+  3. To enable cache to reduce the response time of the List Objects API, select the **Cache** check box to enable caching.
   4. To enable timeout mechanism of the API , select the **Timeout** check box to enable Timeout mechanism. 
   5. To verify the profile using the parameter you have entered, click the **Test** button. If the connection could be made successfully, you will be notified with a *Connection Successfully!* dialog.
   6. You can configure a number of options for a specific Profile by using the **Advance** button.
