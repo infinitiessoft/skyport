@@ -12,6 +12,7 @@ Skyport is an open source Java application that enables user to use [Openstack N
         - [Disabling Authentication](#disabling-authentication)
         - [Integrate with `Openstack Keystone`](#integration-with-openstack-keystone)
         - [Integrate with `Keystone4j`](#_integration-with-keystone4j)
+        - [Configure `policy.json`](# configure-policy.json)
 - [Release notes](#release-notes)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -69,6 +70,8 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
 #### Integrate with `Openstack Keystone`
 
 #### Integrate with `Keystone4j`
+
+#### Configure `policy.json`
 
 ## Dependencies
 
