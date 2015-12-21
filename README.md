@@ -1,6 +1,6 @@
 # skyport
 
-Skyport is an open source Java application that enables user to use [Openstack Nova 2.0 API](http://developer.openstack.org/api-ref-compute-v2.html) to manage their multicloud environment.
+Skyport is an open source Java application that enables user to use [Openstack Nova 2.0 API](http://developer.openstack.org/api-ref-compute-v2.html) to manage multicloud environment.
 
 #Table of contents
 
@@ -17,7 +17,7 @@ Skyport is an open source Java application that enables user to use [Openstack N
 
 ## Quick start
 
-The lastest binary downloads of the Skyport4 are available from https://github.com/infinitiessoft/skyport/archive/v4.0-alpha.zip. Unpack the binary distribution so that it resides in its own directory (conventionally named "skyport[version]"). Skyport can be run as a service using the `skyport` script located under bin/ location. The script accepts a single parameter with the following values:
+The lastest binary downloads of the Skyport4 are available [here] (https://github.com/infinitiessoft/skyport/releases/download/v4.0.0-alpha/skyport4.0.0-SNAPSHOT-20151219-1120.zip). Unpack the binary distribution so that it resides in its own directory (conventionally named "skyport[version]"). Skyport can be run as a service using the `skyport` script located under bin/ location. The script accepts a single parameter with the following values:
 
     console: Run Skyport in the foreground.
 
@@ -43,7 +43,7 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
 
   1. To create a Profile, click the **Add** button.
   2. You now need to configure the specific fields for the Cloud Services Profile you are creating through the Configuration dialog.
-  
+   ![Alt text](https://github.com/infinitiessoft/skyport/blob/master/image/configuration_dialog.png "Configuration Dialog")
     * `Id`:Enter the identifier of the profile to access **(Optional)**. If Id field is left blank the Profile is assigned an automatically generated Id by Skyport.
     * `Name`:Enter some text to help identify the profile **(Required)**. It can be any valid name that you choose.
     * `Provider Class`:Select the Cloud Services driver for this profile **(Required)**.
@@ -58,6 +58,7 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
   4. To enable timeout mechanism of the API , select the **Timeout** check box to enable Timeout mechanism. 
   5. To verify the profile using the parameter you have entered, click the **Test** button. If the connection could be made successfully, you will be notified with a *Connection Successfully!* dialog.
   6. You can configure a number of options for a specific Profile by using the **Advance** button.
+  ![Alt text](https://github.com/infinitiessoft/skyport/blob/master/image/advance_dialog.png "Advance Dialog")
   7. Click **OK** to save the Profile.
 
 ### Security
