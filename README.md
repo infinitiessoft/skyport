@@ -70,8 +70,8 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
    By clicking on the function name within the tree view in the left-side panel, the right side of the Advance dialog will load the function settings and allows you to modify these setting.
    
           * `ThreadPool`:The threadPool on which the function is assigned to.
-          * `Delay`:The time to delay execution.
-          * `Timeout`:The maximum time to wait for function execution completely.
+          * `Delay`:A fixed period between the end of the last invocation and the start of the next(Caching only).
+          * `Timeout`:The maximum time to wait for function execution completely(Timeout only).
           
   7. Click **OK** to save the Profile.
 
