@@ -79,7 +79,7 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
 
 #### Disabling Authentication
 
-Skyport normally enforce *noauth* authentication strategy.The *noauth* strategy still performs authentication, but does not validate any credentials. It provides administrative credentials only if 'admin' is specified as the username.
+Skyport normally enforce *noauth* authentication strategy. The *noauth* strategy still performs authentication, but does not validate any credentials. It provides administrative credentials only if 'admin' is specified as the username.
 This is configured in the *config/nova.conf* file:
 
 ```config/nova.conf
@@ -93,7 +93,7 @@ With noauth strategy registered, any access to the server with token format like
 
 #### Integrate with `Openstack Keystone` or `Keystone4j`
 
-By using *Openstack Keystone* or *Keystone4j* as a common authentication and authorization mechanism, you have to set auth strategy to *keystone* and update the [keystone_authtoken] section to point to the Keystone internal API ip address and change the default admin_tenant_name, admin_user, and admin_password to the correct values in the *config/nova.conf* file:
+By using *Openstack Keystone* or [*Keystone4j*](https://github.com/infinitiessoft/keystone4j) as a common authentication and authorization mechanism, you have to set auth strategy to *keystone* and update the [keystone_authtoken] section to point to the Keystone internal API ip address and change the default admin_tenant_name, admin_user, and admin_password to the correct values in the *config/nova.conf* file:
 
 ```config/nova.conf
 [DEFAULT]
@@ -113,6 +113,8 @@ admin_tenant_name = service
 With keystone strategy registered, each profile's id need to be configured correspond with a different keystone tenant's id to work with it.
 
 #### Configure `policy.json`
+
+Skyport follows OpenStack's access control mechanism using the config/policy.json file to define additional access controls that apply to each API. For more information about configuring policy.json, refer to [The policy.json file](http://docs.openstack.org/kilo/config-reference/content/policy-json-file.html)
 
 ## Using Rest API
 Skyport default listens on port 9999. The examples in this section use [cURL](http://curl.haxx.se/) commands. For information about the OpenStack Compute(Nova) 2.0 APIs, see [Openstack Nova 2.0 API Reference](http://developer.openstack.org/api-ref-compute-v2.html). Using a cURL command like the following command to list servers:
