@@ -4,8 +4,8 @@ Skyport is an open source Java application that enables user to use [Openstack N
 
 #Table of contents
 
-- [Quick start](#quick-start)
 - [Overview](#overview)
+- [Installation](#installation)
 - [Configuration](#configuration)
     - [Profile](#profile)
     - [Security](#security)
@@ -17,7 +17,11 @@ Skyport is an open source Java application that enables user to use [Openstack N
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
-## Quick start
+## Overview
+
+For some reason, many of us use multiple virtualization platform concurrently. But the more platforms you use, the more work it takes to keep up with them. Skyport is an application that provides a single API compatibility with [Openstack Nova 2.0 API](http://developer.openstack.org/api-ref-compute-v2.html) to work with multiple cloud computing providers.
+
+## Installation
 
 The lastest binary downloads of the Skyport4 are available [here] (https://github.com/infinitiessoft/skyport/releases/download/v4.0.0-alpha/skyport4.0.0-SNAPSHOT-20151219-1120.zip). Unpack the binary distribution so that it resides in its own directory (conventionally named "skyport[version]"). Skyport can be run as a service using the `skyport` script located under bin/ location. The script accepts a single parameter with the following values:
 
@@ -32,10 +36,6 @@ The lastest binary downloads of the Skyport4 are available [here] (https://githu
     remove: Removes Skyport from system startup (windows only).
 
 Skyport uses Java Service Wrapper which is a small native wrapper around the Java virtual machine which also monitors it. Note, passing JVM level configuration (such as -X parameters) should be set within the conf/wrapper.conf file.The wrapper.java.maxmemory environment variable controls the maximum memory allocation for the JVM (set in megabytes). It defaults to 512. For more information about configuring Java Service Wrapper, refer to [Java Service Wrapper](http://wrapper.tanukisoftware.com/doc/english/properties.html)
-
-## Overview
-
-For some reason, many of us use multiple virtualization platform concurrently. But the more platforms you use, the more work it takes to keep up with them. Skyport is an application that provides a single API compatibility with [Openstack Nova 2.0 API](http://developer.openstack.org/api-ref-compute-v2.html) to work with multiple cloud computing providers.
 
 ## Configuration
 
