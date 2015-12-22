@@ -11,8 +11,9 @@ Skyport is an open source Java application that enables user to use [Openstack N
     - [Security](#security)
         - [Disabling Authentication](#disabling-authentication)
         - [Integrate with `Openstack Keystone`](#integration-with-openstack-keystone)
-        - [Integrate with `Keystone4j`](#_integration-with-keystone4j)
-        - [Configure `policy.json`](# configure-policy.json)
+        - [Integrate with `Keystone4j`](#integration-with-keystone4j)
+        - [Configure `policy.json`](#configure-policy.json)
+- [Using Rest API](#using-rest-api)
 - [Release notes](#release-notes)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -84,6 +85,61 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
 #### Integrate with `Keystone4j`
 
 #### Configure `policy.json`
+
+## Using Rest API
+Skyport default listens on port 9999. The examples in this section use [cURL](http://curl.haxx.se/) commands. For information about the OpenStack Compute(Nova) 2.0 APIs, see [Openstack Nova 2.0 API Reference](http://developer.openstack.org/api-ref-compute-v2.html). Using a cURL command like the following command to list servers:
+
+```curl
+curl -H "X-Auth-Token:{token}" http://localhost:9999/v2/{profile_id}/servers
+```
+
+example response:
+
+```json
+{
+  "servers" : [ {
+    "id" : "f2f5ca29-6c6d-4241-ab05-cc631da2486e",
+    "name" : "3TLTCrryMQiM",
+    "links" : [ {
+      "rel" : "self",
+      "href" : "http://localhost:9999/v2/98f4cd52-fa8b-4e5f-a031-bc73686cf3fc/servers/f2f5ca29-6c6d-4241-ab05-cc631da2486e"
+    }, {
+      "rel" : "bookmark",
+      "href" : "http://localhost:9999/98f4cd52-fa8b-4e5f-a031-bc73686cf3fc/servers/f2f5ca29-6c6d-4241-ab05-cc631da2486e"
+    } ]
+  }, {
+    "id" : "8d8679af-f2fd-42b3-9803-1a294b75f91a",
+    "name" : "cirros",
+    "links" : [ {
+      "rel" : "self",
+      "href" : "http://localhost:9999/v2/98f4cd52-fa8b-4e5f-a031-bc73686cf3fc/servers/8d8679af-f2fd-42b3-9803-1a294b75f91a"
+    }, {
+      "rel" : "bookmark",
+      "href" : "http://localhost:9999/98f4cd52-fa8b-4e5f-a031-bc73686cf3fc/servers/8d8679af-f2fd-42b3-9803-1a294b75f91a"
+    } ]
+  }, {
+    "id" : "127dbebd-d189-4124-8bd3-4a35dc638909",
+    "name" : "cirrow-jcnet",
+    "links" : [ {
+      "rel" : "self",
+      "href" : "http://localhost:9999/v2/98f4cd52-fa8b-4e5f-a031-bc73686cf3fc/servers/127dbebd-d189-4124-8bd3-4a35dc638909"
+    }, {
+      "rel" : "bookmark",
+      "href" : "http://localhost:9999/98f4cd52-fa8b-4e5f-a031-bc73686cf3fc/servers/127dbebd-d189-4124-8bd3-4a35dc638909"
+    } ]
+  }, {
+    "id" : "30d563ce-f7a7-476a-b7e9-9baa1b2a4453",
+    "name" : "cirros",
+    "links" : [ {
+      "rel" : "self",
+      "href" : "http://localhost:9999/v2/98f4cd52-fa8b-4e5f-a031-bc73686cf3fc/servers/30d563ce-f7a7-476a-b7e9-9baa1b2a4453"
+    }, {
+      "rel" : "bookmark",
+      "href" : "http://localhost:9999/98f4cd52-fa8b-4e5f-a031-bc73686cf3fc/servers/30d563ce-f7a7-476a-b7e9-9baa1b2a4453"
+    } ]
+  } ]
+}
+```
 
 ## Dependencies
 
