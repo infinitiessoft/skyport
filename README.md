@@ -10,9 +10,8 @@ Skyport is an open source Java application that enables user to use [Openstack N
     - [Profile](#profile)
     - [Security](#security)
         - [Disabling Authentication](#disabling-authentication)
-        - [Integrate with `Openstack Keystone`](#integration-with-openstack-keystone)
-        - [Integrate with `Keystone4j`](#integration-with-keystone4j)
-        - [Configure `policy.json`](#configure-policy.json)
+        - [Integrate with `Openstack Keystone` or `Keystone4j`](#integration-with-openstack-keystone_or_keystone4j)
+            - [Configure `policy.json`](#configure-policy.json)
 - [Using Rest API](#using-rest-api)
 - [Release notes](#release-notes)
 - [Acknowledgements](#acknowledgements)
@@ -80,11 +79,23 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
 
 #### Disabling Authentication
 
-#### Integrate with `Openstack Keystone`
+Skyport normally enforce *noauth* authentication strategy.
+This is configured in the *config/nova.conf* file:
 
-#### Integrate with `Keystone4j`
+```config/nova.conf
+# The strategy to use for auth: noauth or keystone. (string
+# value)
+auth_strategy=noauth
+```
 
-#### Configure `policy.json`
+The *noauth* strategy still performs authentication, but does not validate any credentials. It provides administrative credentials only if 'admin' is specified as the username.
+With this strategy registered, any access to the server with token format like ``X-Auth-Token:{profile_id}:admin`` will be granted for admin privilege.
+
+#### Integrate with `Openstack Keystone` or `Keystone4j`
+
+
+
+##### Configure `policy.json`
 
 ## Using Rest API
 Skyport default listens on port 9999. The examples in this section use [cURL](http://curl.haxx.se/) commands. For information about the OpenStack Compute(Nova) 2.0 APIs, see [Openstack Nova 2.0 API Reference](http://developer.openstack.org/api-ref-compute-v2.html). Using a cURL command like the following command to list servers:
