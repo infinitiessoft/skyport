@@ -114,7 +114,7 @@ With keystone strategy registered, each profile's id need to be configured corre
 
 #### Configure policy.json
 
-Skyport follows OpenStack's access control mechanism using the config/policy.json file to define additional access controls that apply to each API. For more information about configuring policy.json, refer to [The policy.json file](http://docs.openstack.org/kilo/config-reference/content/policy-json-file.html)
+Skyport follows OpenStack's access control mechanism using the config/policy.json file to define access control rules that apply to each API. For more information about configuring policy.json, refer to [The policy.json file](http://docs.openstack.org/kilo/config-reference/content/policy-json-file.html)
 
 ## Using Rest API
 Skyport default listens on port 9999. The examples in this section use [cURL](http://curl.haxx.se/) commands. For information about the OpenStack Compute(Nova) 2.0 APIs, see [Openstack Nova 2.0 API Reference](http://developer.openstack.org/api-ref-compute-v2.html). Using a cURL command like the following command to list servers:
