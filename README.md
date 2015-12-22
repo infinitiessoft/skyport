@@ -10,8 +10,8 @@ Skyport is an open source Java application that enables user to use [Openstack N
     - [Profile](#profile)
     - [Security](#security)
         - [Disabling Authentication](#disabling-authentication)
-        - [Integrate with `Openstack Keystone` or `Keystone4j`](#integration-with-openstack-keystone_or_keystone4j)
-            - [Configure `policy.json`](#configure-policy.json)
+        - [Integrate with `Openstack Keystone` or `Keystone4j`](#integrate-with-openstack-keystone_or_keystone4j)
+    - [Configure `policy.json`](#configure-policy.json)
 - [Using Rest API](#using-rest-api)
 - [Release notes](#release-notes)
 - [Acknowledgements](#acknowledgements)
@@ -79,23 +79,40 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
 
 #### Disabling Authentication
 
-Skyport normally enforce *noauth* authentication strategy.
+Skyport normally enforce *noauth* authentication strategy.The *noauth* strategy still performs authentication, but does not validate any credentials. It provides administrative credentials only if 'admin' is specified as the username.
 This is configured in the *config/nova.conf* file:
 
 ```config/nova.conf
+[DEFAULT]
 # The strategy to use for auth: noauth or keystone. (string
 # value)
 auth_strategy=noauth
 ```
 
-The *noauth* strategy still performs authentication, but does not validate any credentials. It provides administrative credentials only if 'admin' is specified as the username.
-With this strategy registered, any access to the server with token format like ``X-Auth-Token:{profile_id}:admin`` will be granted for admin privilege.
+With noauth strategy registered, any access to the server with token format like ``X-Auth-Token:{profile_id}:admin`` will be granted for admin privilege.
 
 #### Integrate with `Openstack Keystone` or `Keystone4j`
 
+By using *Openstack Keystone* or *Keystone4j* as a common authentication and authorization mechanism, you have to set auth strategy to *keystone* and update the [keystone_authtoken] section to point to the Keystone internal API ip address and change the default admin_tenant_name, admin_user, and admin_password to the correct values in the *config/nova.conf* file:
 
+```config/nova.conf
+[DEFAULT]
+# The strategy to use for auth: noauth or keystone. (string
+# value)
+auth_strategy=keystone
 
-##### Configure `policy.json`
+[keystone_authtoken]
+auth_host = 127.0.0.1
+auth_port = 35357
+auth_protocol = http
+admin_user = admin
+admin_password = SuperSekretPassword
+admin_tenant_name = service
+```
+
+With keystone strategy registered, each profile's id need to be configured correspond with a different keystone tenant's id to work with it.
+
+#### Configure `policy.json`
 
 ## Using Rest API
 Skyport default listens on port 9999. The examples in this section use [cURL](http://curl.haxx.se/) commands. For information about the OpenStack Compute(Nova) 2.0 APIs, see [Openstack Nova 2.0 API Reference](http://developer.openstack.org/api-ref-compute-v2.html). Using a cURL command like the following command to list servers:
