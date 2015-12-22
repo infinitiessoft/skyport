@@ -11,7 +11,7 @@ Skyport is an open source Java application that enables user to use [Openstack N
     - [Security](#security)
         - [Disabling Authentication](#disabling-authentication)
         - [Integrate with `Openstack Keystone` or `Keystone4j`](#integrate-with-openstack-keystone-or-keystone4j)
-    - [Configure `policy.json`](#configure-policy.json)
+    - [Configure policy.json](#configure-policy.json)
 - [Using Rest API](#using-rest-api)
 - [Release notes](#release-notes)
 - [Acknowledgements](#acknowledgements)
@@ -112,7 +112,7 @@ admin_tenant_name = service
 
 With keystone strategy registered, each profile's id need to be configured correspond with a different keystone tenant's id to work with it.
 
-#### Configure `policy.json`
+#### Configure policy.json
 
 Skyport follows OpenStack's access control mechanism using the config/policy.json file to define additional access controls that apply to each API. For more information about configuring policy.json, refer to [The policy.json file](http://docs.openstack.org/kilo/config-reference/content/policy-json-file.html)
 
