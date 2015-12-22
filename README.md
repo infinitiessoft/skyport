@@ -61,11 +61,18 @@ To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
   5. To verify the profile using the parameter you have entered, click the **Test** button. If the connection could be made successfully, you will be notified with a *Connection Successfully!* dialog.
   6. You can configure a number of options for a specific Profile by using the **Advance** button.
   ![Alt text](https://github.com/infinitiessoft/skyport/blob/master/image/advance_dialog.png "Advance Dialog")
-     Each profile holds three threadpools for segregating application resources between different types of task - short-term, medium-term and long-term. In the top panel, you can configure threadpools parameters:
-         * `Core size`:The number of threads to keep in the pool, even if they are idle.
-         * `Max size` Class`:The maximum number of threads to allow in the pool.
-         * `Queue capacity`:The maximum work queue size of the thread pool.
-   You can choose the function you want to configure in the left-hand panel then adjust the function para
+     Each profile holds three threadpools for segregating application resources between different types of task - short-term, medium-term and long-term. You can configure those threadpools in the top of the Advance dialog:
+
+          * `Core size`:The number of threads to keep in the pool, even if they are idle.
+          * `Max size`:The maximum number of threads to allow in the pool.
+          * `Queue capacity`:The maximum work queue size of the thread pool.
+          
+   By clicking on the function name within the tree view in the left-side panel, the right side of the Advance dialog will load the function settings and allows you to modify these setting.
+   
+          * `ThreadPool`:The threadPool on which the function is assigned to.
+          * `Delay`:The time to delay execution.
+          * `Timeout`:The maximum time to wait for function execution completely.
+          
   7. Click **OK** to save the Profile.
 
 ### Security
