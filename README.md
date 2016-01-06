@@ -1,6 +1,6 @@
-# skyport
+# Skyport
 
-Skyport is an open source Java application that enables user to use [Openstack Nova 2.0 API](http://developer.openstack.org/api-ref-compute-v2.html) to manage multicloud environment.
+Skyport is an open source Java application that enables users to use [Openstack Nova 2.0 API](http://developer.openstack.org/api-ref-compute-v2.html) to manage multicloud environment.
 
 #Table of contents
 
@@ -19,7 +19,7 @@ Skyport is an open source Java application that enables user to use [Openstack N
 
 ## Overview
 
-For some reason, many of us use multiple virtualization platform concurrently. But the more platforms you use, the more work it takes to keep up with them. Skyport is an application that provides a single API compatibility with [Openstack Nova 2.0 API](http://developer.openstack.org/api-ref-compute-v2.html) to work with multiple cloud computing providers.
+For some reason, many of us use multiple virtualization platforms concurrently. But the more platforms you use, the more work it takes to keep up with them. Skyport is an application that provides a single API compatibility with [Openstack Nova 2.0 API](http://developer.openstack.org/api-ref-compute-v2.html) to work with multiple cloud computing providers.
 
 ## Installation
 
@@ -37,45 +37,45 @@ Skyport uses Java Service Wrapper which is a small native wrapper around the Jav
 
 ### Profile
 
-To add or configure a Profile on Skyport, use the Skyport Administrator GUI.
+To add or configure a profile on Skyport, use the Skyport Administrator GUI.
 
-  1. To create a Profile, click the **Add** button.
+  1. To create a profile, click the **Add** button.
   2. You now need to configure the specific fields for the Cloud Services Profile you are creating through the Configuration dialog.
    ![Alt text](https://github.com/infinitiessoft/skyport/blob/master/image/configuration_dialog.png "Configuration Dialog")
-    * `Id`:Enter the identifier of the profile to access **(Optional)**. If Id field is left blank the Profile is assigned an automatically generated Id by Skyport.
+    * `ID`:Enter the identifier of the profile to access **(Optional)**. If the ID field is left blank, Skyport will automatically generate an ID to be assigned to the Profile.
     * `Name`:Enter some text to help identify the profile **(Required)**. It can be any valid name that you choose.
     * `Provider Class`:Select the Cloud Services driver for this profile **(Required)**.
     * `Provider`:Select the Cloud Service Provider you want to connect to **(Required)**.
     * `Endpoint`:Enter the URL at which the Cloud Services API is sitting **(Required)**.
-    * `Account`:Enter the account/tenant Id to which your API keys are tied **(Required)**.
-    * `RegionId`:Enter the id for the region you are working against **(Required)**.
+    * `Account`:Enter the account/tenant ID to which your API keys are tied **(Required)**.
+    * `RegionId`:Enter the ID for the region you are working against **(Required)**.
     * `AccessPublic`:Enter the public part of your API keys or username **(Required)**.
     * `AccessPrivate`:Enter the private part of your API keys or password **(Required)**.
 
   3. To enable cache to reduce the response time of the API, select the **Cache** check box to enable caching.
-  4. To enable timeout mechanism of the API , select the **Timeout** check box to enable Timeout mechanism. 
-  5. To verify the profile using the parameter you have entered, click the **Test** button. If the connection could be made successfully, you will be notified with a *Connection Successfully!* dialog.
-  6. You can configure a number of options for a specific Profile by using the **Advance** button.
+  4. To enable the timeout mechanism of the API , select the **Timeout** check box to enable the timeout mechanism. 
+  5. To verify the profile using the parameter you have entered, click the **Test** button. If the connection could be made successfully, you will be notified with a *Connection Successful!* dialog.
+  6. You can configure a number of options for a specific profile by using the **Advance** button.
   ![Alt text](https://github.com/infinitiessoft/skyport/blob/master/image/advance_dialog.png "Advance Dialog")
-  Each profile holds three threadpools for segregating application resources between different types of task - short-term, medium-term and long-term. You can configure those threadpools in the top of the Advance dialog:
+  Each profile holds three thread pools for segregating application resources between different types of task - short-term, medium-term and long-term. You can configure these thread pools on the top of the Advance dialog:
 
    * `Core size`:The number of threads to keep in the pool, even if they are idle.
    * `Max size`:The maximum number of threads to allow in the pool.
    * `Queue capacity`:The maximum work queue size of the thread pool.
 
-   By clicking on the function name within the tree view in the left-side panel, the right side of the Advance dialog will load the function settings and allows you to modify these setting.
+   By clicking on the function name within the tree view in the left-side panel, the right side of the Advance dialog will load the function settings and allow you to modify these settings.
    
-   * `ThreadPool`:The threadPool on which the function is assigned to.
-   * `Delay`:A fixed period between the end of the last invocation and the start of the next(Caching only).
-   * `Timeout`:The maximum time to wait for function execution completely(Timeout only).
+   * `ThreadPool`:The thread pool on which the function is assigned to.
+   * `Delay`:A fixed period between the end of the last invocation and the start of the next (caching only).
+   * `Timeout`:The maximum time to wait for function execution (timeout only).
 
-  7. Click **OK** to save the Profile.
+  7. Click **OK** to save the profile.
 
 ### Security
 
 #### Disabling Authentication
 
-Skyport normally enforce *noauth* authentication strategy. The *noauth* strategy still performs authentication, but does not validate any credentials. It provides administrative credentials only if 'admin' is specified as the username.
+Skyport normally enforce the *noauth* authentication strategy. The *noauth* strategy still performs authentication, but does not validate any credentials. It provides administrative credentials only if 'admin' is specified as the username.
 This is configured in the *config/nova.conf* file:
 
 ```config/nova.conf
@@ -85,11 +85,11 @@ This is configured in the *config/nova.conf* file:
 auth_strategy=noauth
 ```
 
-With noauth strategy registered, any access to the server with token format like ``X-Auth-Token:{profile_id}:admin`` will be granted for admin privilege.
+With the noauth strategy registered, any access to the server with a token format like ``X-Auth-Token:{profile_id}:admin`` will be granted admin privileges.
 
 #### Integrate with `Openstack Keystone` or `Keystone4j`
 
-By using *Openstack Keystone* or [*Keystone4j*](https://github.com/infinitiessoft/keystone4j) as a common authentication and authorization mechanism, you have to set auth strategy to *keystone* and update the [keystone_authtoken] section to point to the Keystone internal API ip address and change the default admin_tenant_name, admin_user, and admin_password to the correct values in the *config/nova.conf* file:
+By using *Openstack Keystone* or [*Keystone4j*](https://github.com/infinitiessoft/keystone4j) as a common authentication and authorization mechanism, you have to set the auth strategy to *Keystone* and update the [keystone_authtoken] section to point to the Keystone internal API IP address and change the default admin_tenant_name, admin_user, and admin_password to the correct values in the *config/nova.conf* file:
 
 ```config/nova.conf
 [DEFAULT]
@@ -106,14 +106,14 @@ admin_password = SuperSekretPassword
 admin_tenant_name = service
 ```
 
-With keystone strategy registered, each profile's id need to be configured correspond with a different keystone tenant's id to work with it.
+Once the Keystone strategy is registered, each profile's ID will need to be configured to correspond with a seperate Keystone tenant's ID to work with it.
 
 #### Configure policy.json
 
-Skyport follows OpenStack's access control mechanism using the config/policy.json file to define access control rules that apply to each API. For more information about configuring policy.json, refer to [The policy.json file](http://docs.openstack.org/kilo/config-reference/content/policy-json-file.html)
+Skyport follows OpenStack's access control mechanism using the config/policy.json file to define access control rules that applies to each API. For more information about configuring policy.json, refer to [the policy.json file](http://docs.openstack.org/kilo/config-reference/content/policy-json-file.html)
 
 ## Using Rest API
-Skyport default listens on port 9999. The examples in this section use [cURL](http://curl.haxx.se/) commands. For information about the OpenStack Compute(Nova) 2.0 APIs, see [Openstack Nova 2.0 API Reference](http://developer.openstack.org/api-ref-compute-v2.html). Using a cURL command like the following command to list servers:
+Skyport listens to port 9999 by default. The examples in this section use [cURL](http://curl.haxx.se/) commands. For information about the OpenStack Compute(Nova) 2.0 APIs, see [Openstack Nova 2.0 API Reference](http://developer.openstack.org/api-ref-compute-v2.html). The following cURL command is used to list servers:
 
 ```curl
 curl -H "X-Auth-Token:{token}" http://localhost:9999/v2/{profile_id}/servers
