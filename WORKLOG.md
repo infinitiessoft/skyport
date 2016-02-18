@@ -9,10 +9,10 @@ I've decided to keep a record of our work on Skyport 4 here in the repo. It can 
 
 ### 18th February 2016
 
-* Rector nova2.0-api and wrtie the Openstack Driver Usages of implemented api:server_ips, server_metadata, image_metadata.
+* Refactor nova2.0-api and wrtie the Openstack Driver Usages of implemented api:server_ips, server_metadata, image_metadata.
 
 ### 17th February 2016
 
-* Rector nova2.0-api
+* Refactor nova2.0-api
 * Move keystone middleware code to keystone4j-client 
 * wrtie the Openstack Driver of implemented api: servers, servers_action, flavors, images.
