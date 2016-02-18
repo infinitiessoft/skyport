@@ -12,9 +12,11 @@ I've decided to keep a record of our work on Skyport 4 here in the repo. It can 
 ### 18th February 2016
 
 * Refactor nova2.0-api and wrtie the Openstack Driver Usages of implemented api:server_ips, server_metadata, image_metadata.
+* add nova2.0-api resource : loadbalancers
 
 ### 17th February 2016
 
 * Refactor nova2.0-api
 * Move keystone middleware code to keystone4j-client 
-* wrtie the Openstack Driver of implemented api: servers, servers_action, flavors, images.
+* wrtie the Openstack Driver of implemented api: servers, servers_action, flavors, images, networks.
+* add nova2.0-api : networks, subnets
