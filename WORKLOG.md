@@ -6,6 +6,8 @@ I've decided to keep a record of our work on Skyport 4 here in the repo. It can 
 
 ### TODO
 
+* add volume, nic, snapshot, console, availability zone, apis
+
 
 ### 18th February 2016
 
