@@ -11,10 +11,14 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 * add volume, nic, snapshot, console apis
 * test create vm with zone
 
+### Work in process
+
+* os-volume_attachments
+
 ### 19th February 2016
 
 * Refactor nova2.0-api and wrtie the Openstack Driver Usages of implemented api:versions, limits, availability zone
-* add nova2.0-api resource : os-availability-zone
+* add nova2.0-api resource : os-availability-zone, os-volume_attachments
 
 ### 18th February 2016
 
