@@ -1,13 +1,15 @@
 # Skyport 4 Work Log
 
 Pohsun Huang(pohsun@infinitiessoft.com)
+
 Tata Chen(tata@infinitiessoft.com)
 
 we have decided to keep a record of our work on Skyport 4 here in the repo. It can be removed when the project goes live, but will serve as a handy log of what I'm doing and thinking during development.
 
 ### TODO
 
-* add volume, nic, snapshot, console, apis
+* add volume, nic, snapshot, console apis
+* test create vm with zone
 
 ### 19th February 2016
 
