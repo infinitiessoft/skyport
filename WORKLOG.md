@@ -15,6 +15,11 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 * os-volume_attachments
 
+### 22th February 2016
+
+* add skyport-core network service implements : vlan, loadbalancer
+* add skyport-api network proxy : vlan, subnet, loadbalancer
+
 ### 19th February 2016
 
 * Refactor nova2.0-api and wrtie the Openstack Driver Usages of implemented api:versions, limits, availability zone
