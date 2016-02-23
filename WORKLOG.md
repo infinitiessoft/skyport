@@ -13,7 +13,7 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### Work in process
 
-* os-volumes
+* os-volumes testing, snapshot
 
 ### 23th February 2016
 
