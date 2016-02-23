@@ -19,6 +19,7 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 * add nova2.0-api resource : os-volume_attachments, os-volumes.
 * Wrtie the Openstack Driver Usages of implemented api: os-volumes.
+* openstack add loadbalancer ,listener, member
 
 ### 22th February 2016
 
