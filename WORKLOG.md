@@ -13,7 +13,11 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### Work in process
 
-* os-volume_attachments
+* os-volumes
+
+### 23th February 2016
+
+* add nova2.0-api resource : os-volume_attachments, os-volumes
 
 ### 22th February 2016
 
