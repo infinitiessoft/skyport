@@ -8,16 +8,17 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### TODO
 
-* add volume, nic, snapshot, console apis
+* add nic, snapshot, console apis
 * test create vm with zone
 
 ### Work in process
 
-* os-volumes testing, snapshot
+* snapshot
 
 ### 23th February 2016
 
-* add nova2.0-api resource : os-volume_attachments, os-volumes
+* add nova2.0-api resource : os-volume_attachments, os-volumes.
+* Wrtie the Openstack Driver Usages of implemented api: os-volumes.
 
 ### 22th February 2016
 
@@ -26,13 +27,13 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### 19th February 2016
 
-* Refactor nova2.0-api and wrtie the Openstack Driver Usages of implemented api:versions, limits, availability zone
+* Refactor nova2.0-api and wrtie the Openstack Driver Usages of implemented api : versions, limits, availability zone
 * add nova2.0-api resource : os-availability-zone, os-volume_attachments
 * add skyport-core : cached network service
 
 ### 18th February 2016
 
-* Refactor nova2.0-api and wrtie the Openstack Driver Usages of implemented api:server_ips, server_metadata, image_metadata.
+* Refactor nova2.0-api and wrtie the Openstack Driver Usages of implemented api : server_ips, server_metadata, image_metadata.
 * add nova2.0-api resource : loadbalancers
 
 ### 17th February 2016
