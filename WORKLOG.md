@@ -8,16 +8,16 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### TODO
 
-* add nic, security group, console apis
+* add networks, nic, console apis
 
 ### Work in process
 
-* key
+* security group_rule
 
 ### 24th February 2016
 
-* add nova2.0-api resource : os-snapshots, os-keypairs.
-* Wrtie the Openstack Driver Usages of implemented api: os-snapshots, os-keypairs.
+* add nova2.0-api resource : os-snapshots, os-keypairs, os-security-groups, os-security-group-rules.
+* Wrtie the Openstack Driver Usages of implemented api: os-snapshots, os-keypairs, os-security-groups, os-security-group-rules.
 
 ### 23th February 2016
 
