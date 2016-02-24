@@ -8,12 +8,16 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### TODO
 
-* add nic, snapshot, console apis
-* test create vm with zone
+* add nic, security group, console apis
 
 ### Work in process
 
-* snapshot
+* key
+
+### 24th February 2016
+
+* add nova2.0-api resource : os-snapshots, os-keypairs.
+* Wrtie the Openstack Driver Usages of implemented api: os-snapshots, os-keypairs.
 
 ### 23th February 2016
 
