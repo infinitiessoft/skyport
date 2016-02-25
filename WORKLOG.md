@@ -9,10 +9,16 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 ### TODO
 
 * add networks, nic, console apis
+* GenericExceptionMapper, updateServer
 
 ### Work in process
 
-* security group_rule
+* networks, interface
+
+### 25th February 2016
+
+* add nova2.0-api resource : os-networks, os-interface.
+* Wrtie the Openstack Driver Usages of implemented api: os-networks, os-interface.
 
 ### 24th February 2016
 
