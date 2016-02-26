@@ -8,12 +8,12 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### TODO
 
-* add networks, nic, console apis
-* GenericExceptionMapper, updateServer
+* add console apis
+* updateServer
 
 ### Work in process
 
-* networks, interface
+* GenericExceptionMapper
  
 ### 26th February 2016
 
