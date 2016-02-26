@@ -14,6 +14,11 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 ### Work in process
 
 * networks, interface
+ 
+### 25th February 2016
+
+* add nova2.0-api resource :os-interface.
+* Wrtie the Openstack Driver Usages of implemented api:  os-interface.
 
 ### 25th February 2016
 
