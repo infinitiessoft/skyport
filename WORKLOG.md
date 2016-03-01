@@ -13,6 +13,7 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### Work in process
 
+integrate jersey with spring-mvc, spring-data
  
 ### 26th February 2016
 
