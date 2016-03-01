@@ -18,6 +18,7 @@ integrate jersey with spring-mvc, spring-data
 ### 1th March 2016
 
 * integrate jersey with spring-mvc, spring-data.
+* nova2.0-api resource : networks, subnets, ports.
  
 ### 26th February 2016
 
