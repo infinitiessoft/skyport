@@ -11,6 +11,7 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 * add console apis
 * in memory cache
 * add cors filter
+* add javascript ui by openstack api
 
 ### Work in process
 
@@ -18,11 +19,13 @@ integrate jersey with spring-mvc, spring-data
 
 ### 3th March 2016
 
-* integrate jersey with spring-mvc, spring-data, spring-security.
+* integrate jersey with spring-mvc, spring-data.
+* add neutron2.0-api module.
+* investigate yellow circle, trystack.
 
 ### 2th March 2016
 
-* integrate jersey with spring-mvc, spring-data, spring-security.
+* integrate jersey with spring-mvc, spring-data.
  
 ### 1th March 2016
 
