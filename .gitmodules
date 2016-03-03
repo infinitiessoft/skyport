@@ -40,3 +40,6 @@
 [submodule "skyport-jsw"]
 	path = skyport-jsw
 	url = https://github.com/infinitiessoft/skyport-jsw.git
+[submodule "neutorn2.0-api"]
+	path = neutorn2.0-api
+	url = https://github.com/infinitiessoft/neutron2.0-api.git
