@@ -12,10 +12,17 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 * in memory cache
 * add cors filter
 * add javascript ui by openstack api
+* object storage(swift) api
+* add testcases
 
 ### Work in process
 
-integrate jersey with spring-mvc, spring-data
+* add openstack-api-commons modules
+* object storage(swift) api
+
+### 4th March 2016
+
+* add openstack-api-commons modules
 
 ### 3th March 2016
 
