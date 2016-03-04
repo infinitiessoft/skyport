@@ -23,7 +23,7 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 ### 4th March 2016
 
 * add openstack-api-commons modules
-* add swift1.0-api modules : list-container, list-object, create-container
+* add swift1.0-api modules : list-container, list-object, create-container, delete-container
 
 ### 3th March 2016
 
