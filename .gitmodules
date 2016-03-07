@@ -43,3 +43,6 @@
 [submodule "neutorn2.0-api"]
 	path = neutorn2.0-api
 	url = https://github.com/infinitiessoft/neutron2.0-api.git
+[submodule "openstack-api-commons"]
+	path = openstack-api-commons
+	url = https://github.com/infinitiessoft/openstack-api-commons.git
