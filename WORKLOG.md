@@ -20,6 +20,10 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 * add openstack-api-commons modules
 * object storage(swift) api
 
+### 8th March 2016
+
+* integrate nova2.0-api, neutron-api with openstack-api-commons
+
 ### 4th March 2016
 
 * add openstack-api-commons modules
