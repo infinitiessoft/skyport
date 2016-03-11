@@ -23,10 +23,12 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 ### 9th March 2016
 
 * integrate nova2.0-api, neutron-api with openstack-api-commons
+* add swift1.0-api modules : account-metadata, container-metadata, object-metadata
 
 ### 8th March 2016
 
 * integrate nova2.0-api, neutron-api with openstack-api-commons
+*  add swift1.0-api modules : copy-object, create-object, delete-object
 
 ### 4th March 2016
 
