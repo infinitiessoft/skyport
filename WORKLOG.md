@@ -17,8 +17,11 @@ we have decided to keep a record of our work on Skyport 4 here in the repo. It c
 
 ### Work in process
 
-* add openstack-api-commons modules
-* object storage(swift) api
+* testcases for swift1.0-api, nova2.0-api modules.
+
+### 22th March 2016
+
+* add testcases to swift1.0-api, nova2.0-api modules.
 
 ### 9th March 2016
 
